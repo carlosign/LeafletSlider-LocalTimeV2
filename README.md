@@ -25,8 +25,10 @@ Add:
 * [JQuery](http://code.jquery.com/jquery-1.9.1.min.js)
 * [JQueryUI - CSS](http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css)
 * [JQueryUI - JS](http://code.jquery.com/ui/1.9.2/jquery-ui.js)
-
 to your normal Leaflet map.
+
+* The DATE MUST BE in American format MM/DD/YYYY
+
 
 
 Author
