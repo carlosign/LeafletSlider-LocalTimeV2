@@ -1,5 +1,5 @@
 # LeafletSlider-LocalTimeV2
-Leaflet Time Slider V2
+LeafletSlider Local Time V2
 =============
 
 The [Leaflet](http://leafletjs.com/) Time-Slider enables you to dynamically add and remove Markers on a map by using a [JQuery UI slider
