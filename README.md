@@ -7,11 +7,11 @@ The [Leaflet](http://leafletjs.com/) Time-Slider enables you to dynamically add 
 
 Features
 -----
--It has all of LeafletSlider
--The dates are correctly sorted in the slider.
--No LAG when +1000 markers.
--Reflects date in LocalDate string.
--Label: Shows date range selected.
+*It has all of LeafletSlider
+*The dates are correctly sorted in the slider.
+*No LAG when +1000 markers.
+*Reflects date in LocalDate string.
+*Label: Shows date range selected.
 
 Demo
 -----
