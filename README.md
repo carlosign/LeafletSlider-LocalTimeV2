@@ -33,10 +33,8 @@ to your normal Leaflet map.
 
 Author
 -----
-Dennis Wilhelm, 2013
+Carlos Charletti - 2024
 
-Updated by @Falke-Design 2020
+Original LeafletTimeSlider author: Dennis Wilhelm, 2013, Updated by @Falke-Design 2020
+LeafletTimeSlider 2020 update: Further update by Brian Geyer 2020
 
-Further update by Brian Geyer 2020
-
-Further update by Carlos Charletti 2024
