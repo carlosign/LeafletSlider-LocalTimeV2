@@ -42,5 +42,15 @@
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             ).addTo(map_02db7ef2198658846c771133e9990e05);
-  
+	//La fecha tiene que estar en formato AMERICANO.
+	var marcador1 = L.marker([-38.71305419638387, -62.2619888653697], { time: '2014-06-14 00:00:00'}).addTo(map_02db7ef2198658846c771133e9990e05);
+	var marcador2 = L.marker([-38.981175227818, -61.299760698251], { time: '2015-01-06 00:00:00'}).addTo(map_02db7ef2198658846c771133e9990e05);
+	var marcador3 = L.marker([-38.98752890247108, -61.28609924521281], { time: '2015-01-06 00:00:00'}).addTo(map_02db7ef2198658846c771133e9990e05);
+	const marcadores = [marcador1, marcador2, marcador3]
+	layerGroup = L.layerGroup(marcadores);
+	layerGroup.addTo(map_02db7ef2198658846c771133e9990e05);
+	var sliderControl = L.control.sliderControl({layer:layerGroup,position: "topright",range: true,showAllOnStart: true, alwaysShowDate: true,showAllPopups: false, showPopups: false, timeStrLength: 10,});
+	map_02db7ef2198658846c771133e9990e05.addControl(sliderControl);
+	sliderControl.startSlider();
+	
 </script>
