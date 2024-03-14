@@ -16,7 +16,7 @@ Features
 Demo
 -----
 
-Check out the [Demo](http://dwilhelm89.github.io/LeafletSlider/)!
+Check out the [Demo](http://carlosign.github.io/LeafletSlider-LocalTimeV2/)!
 
 Usage
 -----
