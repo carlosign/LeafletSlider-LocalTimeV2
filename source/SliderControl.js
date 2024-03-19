@@ -21,6 +21,7 @@ L.Control.SliderControl = L.Control.extend({
         popupContent: '',
         showAllPopups: true,
         showPopups: true,
+	onlyDateString: true,
     },
 
     initialize: function (options) {
@@ -295,7 +296,13 @@ L.Control.SliderControl = L.Control.extend({
         if (options.isEpoch) {
             time = (new Date(parseInt(time))).toString(); // this is local time
         }
-	time = new Date(time).toLocaleString(); //Con esto, se muestra el formato de la fecha en tiempo local. De todas formas el input del marker, debe ser del estilo time: mm/dd/yyyy
+	if (options.onlyDateString) {
+	time = new Date(time).toLocaleString([], {year: 'numeric', month: 'numeric', day: 'numeric'}); //Con esto, se muestra el formato de la fecha en tiempo local. De todas formas el input del marker, debe ser del estilo time: mm/dd/yyyy
+	}
+	else {
+	time = new Date(time).toLocaleString();
+	}
+
         return time.substr(options.startTimeIdx, options.startTimeIdx + options.timeStrLength)
     },
 
